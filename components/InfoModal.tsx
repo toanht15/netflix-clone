@@ -10,7 +10,7 @@ interface InfoModalProps {
     onClose: any;
 }
 
-const InfoModal: React.RC<InfoModalProps> = ({ visible, onClose }) => {
+const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
     const [isVisible, setIsVisible] = useState(!!visible);
 
     const { movieId } = useInfoModal();
